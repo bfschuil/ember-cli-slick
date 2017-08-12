@@ -22,7 +22,8 @@ module.exports = {
     this._super.included(app);
 
     this.app.import('vendor/slick/slick.css');
-    this.app.import('vendor/slick/slick.js');
+    // Stop importing slick so we can use our own modified copy
+    // this.app.import('vendor/slick/slick.js');
     this.app.import('vendor/slick/slick-theme.css');
     this.app.import('vendor/slick/fonts/slick.ttf', { destDir: 'assets/fonts' });
     this.app.import('vendor/slick/fonts/slick.svg', { destDir: 'assets/fonts' });
